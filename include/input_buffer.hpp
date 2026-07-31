@@ -5,10 +5,14 @@
 
 class InputBuffer
 {
-    private:
-        std::string command;
-    public:
-        void setCommand(const std::string& input);
-        std::string getCommand() const;
+private:
+    std::string command;
+    int historyLength = 0;
+
+public:
+    void setCommand(const std::string& input);
+    std::string getCommand() const;
+    int getHistoryLength() const;
 };
+
 #endif

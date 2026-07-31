@@ -1,11 +1,8 @@
 #include <iostream>
-#include "input_buffer.hpp"
+#include "console.hpp"
 
 int main()
 {
-    std::cout<<"Chronicle running.. hurray!!!\n";
-    InputBuffer buffer;
-    buffer.setCommand("Hello ironhold!!");
-    std::cout<<buffer.getCommand()<<"\n";
+    startConsole();
     return 0;
 }
