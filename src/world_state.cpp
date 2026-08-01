@@ -1,5 +1,11 @@
 #include "world_state.hpp"
 
+WorldState::WorldState(const std::string& filename)
+    : pager(filename)
+{
+    load();
+}
+
 SpawnResult WorldState::spawnPlayer(const Player& player)
 {
     for(const Player& existingPlayer : players)
