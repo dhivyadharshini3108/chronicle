@@ -6,7 +6,9 @@ SRC = src/main.cpp \
 	src/command_dispatcher.cpp \
 	src/parser.cpp\
 	src/executer.cpp\
-	src/world_state.cpp
+	src/world_state.cpp\
+	src/pager.cpp\
+	src/entity.cpp
 TARGET = chronicle
 all:
 	$(CXX) $(CXXFLAGS) $(SRC) -o $(TARGET)
